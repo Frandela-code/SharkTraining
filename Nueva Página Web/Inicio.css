@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+    
+
+    /* Barra de navegación */
+    .navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    width: 100px;
+    position: absolute;
+    margin-left: auto;
+    right: 0;
+    }
+    
+    .navlinks{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    }
+
+    .navlinks a {
+        text-decoration: none; /* Quita el subrayado de los enlaces */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .nav-active {
+        /* Estilos que deseas aplicar a la clase "nav-active" */
+        background-color: #ff0000; /* Cambia el color de fondo a rojo, por ejemplo */
+        color: #ffffff; /* Cambia el color del texto a blanco, por ejemplo */
+        /* Otros estilos */
+    }
+    
+    
+    /* Estilo para el menú de hamburguesa (visible en dispositivos móviles) */
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    
+    /* Estilo para las barras del icono de hamburguesa */
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    
+    /* Estilo para la lista de elementos de navegación (oculta por defecto) */
+    .nav-list {
+        display: none;
+        list-style: none;
+        padding: 0;
+    }
+    
+    /* Mostrar la lista de elementos de navegación cuando se aplica la clase "nav-active" */
+    .nav-active .nav-list {
+        display: block;
+    }
+    
+    
+
+
+    
+
+    
+
+    
+
+
+
+
+
+
+
+
+/* Imagen de Usuario */
+.ImagendeUsuario {
+    width: 32px;
+    height: 30px;
+    margin: 0px;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+/* Barra de busqueda */
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 232px; /* Ancho de la caja de búsqueda */
+    height: 29px;
+    margin-right: 10px; /* Espacio entre la caja de búsqueda y los otros elementos */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-button {
+    padding: 5px 10px;
+    background-color: #007bff; /* Color de fondo del botón de búsqueda */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* Imagen de Inicio */
+.parallax {
+background-image: url("Img/Shark Inicio 2.jpg");
+min-height: 100vh;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+color: white;
+}
+
+
+
+
+
+
+
+
+
+/* Imagenes 50% y 50% de la segunda pantalla */
+/* Estilo del contenedor principal */
+.image-container {
+    display: flex;
+    width: 100%;
+}
+
+/* Estilo de los contenedores de las imágenes */
+.half-image-container {
+    flex-basis: 50%;
+    text-align: center;
+    position: relative; /* Para posicionar elementos hijos relativamente */
+}
+
+/* Estilo de las imágenes en estado normal */
+.product-image,
+.asesoramientos-image {
+    width: 100%;
+    max-width: 100%; /* Asegura que las imágenes ocupen el 100% del contenedor */
+    height: auto;
+    transition: filter 0.3s; /* Agregar una transición suave */
+}
+
+/* Cambiar el color de las imágenes al pasar el cursor */
+.half-image-container:hover .product-image,
+.half-image-container:hover .asesoramientos-image {
+    filter: brightness(50%);
+}
+
+/* Estilo para el texto */
+.image-text {
+    position: absolute; /* Para posicionar el texto */
+    top: 50%; /* Colocar el texto en el centro verticalmente */
+    left: 50%; /* Colocar el texto en el centro horizontalmente */
+    transform: translate(-50%, -50%); /* Centrar el texto correctamente */
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+    color: white; /* Color del texto */
+    padding: 10px; /* Espaciado alrededor del texto */
+    font-size: 18px; /* Tamaño del texto */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Contenedor de "Quienes Somos?" */
+.lorem-ipsum-container {
+    text-align: justify;
+    padding: 200px;
+    text-align: center;
+    background-color: #0C0E10;
+    color: white;
+}
+
+/* El texto "Quienes Somos?" */
+.lorem-ipsum-text {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+
+
+
+
+
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 346px;
+
+}
+
+/* Columna de la izquierda */
+.footer-left, .footer-right {
+    flex-basis: calc(50% - 40px); /* 50% del ancho, menos el espacio entre las columnas */
+}
+
+/* Títulos en el footer */
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Imágenes pequeñas en el footer */
+.footer-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Textos de Enlaces */
+.footer-random-words ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-random-words ul li {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive de la Barra de navegación */
+    @media screen and (min-width: 780px){
+        .flexbox-item-1{
+            width: 20%;
+        }
+        .navbar {
+        flex-direction: row; 
+        justify-content: space-around;
+        justify-content: flex-end;
+        margin-left: auto;
+        }
+            
+        .navlinks { 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; 
+        /* width: 40%; */
+        }
+            
+        .navlinks p {
+        margin: 10px;
+        }
+    }
+
+/* Estilo para la barra de búsqueda en dispositivos móviles */
+@media screen and (max-width: 780px) {
+    .search-bar {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección a columna en dispositivos móviles */
+        align-items: flex-start; /* Alinea los elementos a la izquierda en el contenedor */
+        margin-right: 300px; /* Margen derecho */
+    }
+
+    .search-input {
+        width: 330%; /* Aumenta el ancho de la caja de búsqueda */
+        margin-bottom: 10px; /* Espacio entre la caja de búsqueda y el botón */
+        padding: 10px; /* Aumenta el relleno para que el texto completo sea visible */
+    }
+
+    .search-button {
+        width: 100%; /* Ocupa todo el ancho disponible */
+    }
+}
+
+
+
+
+
+
+    
+/* Responsive del Texto de "Quienes Somos?" */
+@media screen and (max-width: 780px) {
+    .lorem-ipsum-container {
+        padding: 20px; /* Reduce el espacio alrededor del texto en dispositivos móviles y tablets */
+    }
+
+    .lorem-ipsum-text {
+        font-size: 16px; /* Reduce el tamaño del texto en dispositivos móviles y tablets */
+    }
+}
+
+/* Responsive de el Footer*/
+@media screen and (max-width: 767px) {
+    footer {
+        padding: 10px; /* Reduce el espacio alrededor del footer en dispositivos móviles y tablets */
+        flex-direction: column; /* Cambia la dirección en dispositivos móviles y tablets */
+        align-items: center; /* Centra el contenido en todas las pantallas */
+    }
+
+    /* Estilos para las columnas izquierda y derecha */
+    .footer-left, .footer-right {
+        flex-basis: 100%; /* Ocupa el ancho completo en dispositivos móviles y tablets */
+        text-align: center; /* Centra el contenido en todas las pantallas */
+        margin-bottom: 20px; /* Espacio entre las columnas en dispositivos móviles y tablets */
+    }
+
+    /* Estilos para los enlaces en el footer */
+    .footer-random-words ul {
+        justify-content: center; /* Centra los elementos en todas las pantallas */
+    }
+
+    /* Estilos para las imágenes pequeñas en el footer */
+    .footer-icon {
+        margin-right: 0; /* Elimina el margen derecho en dispositivos móviles y tablets */
+    }
+}
+    

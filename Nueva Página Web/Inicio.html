@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Sitio Official de </title>
+    <link rel="stylesheet" href="Inicio.css" />
+</head>
+
+
+
+
+
+<body>
+    <header>
+        <div class="navbar">
+            <nav class="navlinks">
+
+
+                <div class="search-bar">
+                    <input type="text" placeholder="Encontra lo que estás buscando..." class="search-input">
+                    <button class="search-button">Buscar</button>
+                </div>
+
+
+                <p><a href=""> Inicio </a></p>
+                <p><a href=""> Productos </a></p>
+                <p><a href=""> Asesoramientos </a></p>
+                <p><a href=""> Carrito </a></p>
+                <img src="Img/Usuario.jpg" alt="Usuario" class="ImagendeUsuario"/>
+            </nav>
+        </div>
+
+        <!-- Menú de hamburguesa (oculto por defecto en pantallas más grandes) -->
+<div class="hamburger-menu" onclick="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+</div>
+
+<!-- Lista de elementos de navegación (oculta por defecto) -->
+<ul class="nav-list">
+    <li><a href="">Inicio</a></li>
+    <li><a href="">Productos</a></li>
+    <li><a href="">Asesoramientos</a></li>
+    <li><a href="">Carrito</a></li>
+</ul>
+
+
+
+    </header>
+
+
+          
+
+
+
+
+
+
+    <div class="parallax">
+    </div>
+
+
+
+
+
+
+    <div class="image-container">
+        <a href="https://www.tiendashark.com.ar/" class="half-image-container">
+            <img src="Img/Shark Inicio.jpg" alt="Productos" class="half-image product-image">
+            <span class="image-text">Productos</span>
+        </a>
+        <a href="https://trainingwhead.com/" class="half-image-container">
+            <img src="Img/premium-trimestral.png" alt="Asesoramientos" class="half-image asesoramientos-image">
+            <span class="image-text">Asesoramientos</span>
+        </a>
+    </div>
+    
+    
+
+
+
+
+    
+
+    <div class="lorem-ipsum-container">
+        <p class="lorem-ipsum-text">¿QUIENES SOMOS?</p>
+        <p class="lorem-ipsum-text">Somos un emprendimiento que combina DOS MARCAS creadas </br>
+            por el conocido  referente del fitness TOMAS MAZZA.</p>
+        <p class="lorem-ipsum-text">SHARK se dedica específicamente a la ropa. Podes encontrar </br>
+            musculosas, shorts, remerones OVERSIZE, buzos y hasta
+             SUPLEMENTOS.</p>
+        <p class="lorem-ipsum-text">En TRAININGWHEAD podes encontrar todo lo que tiene que </br>
+            ver con los planes de asesoramientos para lograr tu CAMBIO 
+            FISICO IDEAL.</p>
+        <p class="lorem-ipsum-text">Serás acompañado por asesores PROFESIONALES y hasta el </br>
+            mismísimo TOMAS MAZZA puede estar incluido en tu plan.</p>
+    </div>
+
+
+
+
+
+
+    <footer>
+        <div class="footer-left">
+            <h3>Dirección SHARK</h3>
+            <img src="Img/Ubicacion.jpg" alt="Dirección" class="footer-icon">
+            <p>Moron 4756, Floresta, CABA, Argentina.</p>
+        </div>
+        <div class="footer-right">
+            <h3>Contacto</h3>
+            <img src="Img/Mail.jpg" alt="Contacto" class="footer-icon">
+            <p>consultas.shark@gmail.com</p>
+            <p>trainingwheadd@gmail.com</p>
+        </div>
+        <div class="footer-random-words">
+            <h3>Enlaces</h3>
+            <ul>
+                <li>Inicio</li>
+                <li>Productos</li>
+                <li>Asesoramientos</li>
+                <li>Carrito</li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script>
+        function toggleMenu() {
+            const navlinks = document.querySelector('.navlinks');
+            navlinks.classList.toggle('nav-active');
+        }
+        </script>
+        
+        
+</body>
+</html>
